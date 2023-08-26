@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        alert("Welcome to my site!");
+
+        // Prompt the user to enter their name
+        var name = prompt("Please enter your name:");
+
+        // Prompt the user to choose a color
+        var color = prompt("Please choose a color (red, green, or blue):");
+
+        var welcomeMessage = "Welcome, " + name + "!";
+
+        switch (color) {
+            case "red":
+                welcomeMessage = "<span style='color: red;'>" + welcomeMessage + "</span>";
+                break;
+            case "green":
+                welcomeMessage = "<span style='color: green;'>" + welcomeMessage + "</span>";
+                break;
+             case "blue":
+                welcomeMessage = "<span style='color: blue;'>" + welcomeMessage + "</span>";
+                break;
+                default:
+            break;
+}
+document.write(welcomeMessage);
+    </script>
+</body>
+</html>

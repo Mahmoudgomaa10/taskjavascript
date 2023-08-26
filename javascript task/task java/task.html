@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Get input from the user
+var num1 = parseFloat(prompt("Enter the first number:"));
+var num2 = parseFloat(prompt("Enter the second number:"));
+var operation = prompt("Enter the operation (+, -, *, /):");
+
+var result;
+
+// Perform the calculation based on the operation
+switch (operation) {
+  case "+":
+    result = num1 + num2;
+    operationName = "Addition";
+    break;
+  case "-":
+    result = num1 - num2;
+    operationName = "Subtraction";
+    break;
+  case "*":
+    result = num1 * num2;
+    operationName = "Multiplication";
+    break;
+  case "/":
+    result = num1 / num2;
+    operationName = "Division";
+    break;
+  default:
+    alert("Invalid operation!");
+    break;
+}
+
+// Print the result
+console.log(operationName + " of (" + num1 + ", " + num2 + ") = " + result);
+    </script>
+</body>
+</html>
